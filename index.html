@@ -2,32 +2,110 @@
 <html>
 <head>
 	<title></title>
-	
-	<style type="text/css">
-		#fishStix {
-			width: 300px;
-			height: 200px;
-			background-repeat: no-repeat;
-
-			background-size: contain;
-			background-color: red;
-			background-image: url(https://i.pinimg.com/originals/97/8c/ca/978ccae1ba3926c79720e9f59435c1dc.gif);
-		}
-
-		#fishStix:hover{
-			transition: 2s;
-			background-image: url(https://c.tenor.com/eryHXMIn3WsAAAAC/cuervo-cuervos.gif);
-		}
-
-	</style>
 </head>
 <body>
 
-<div id="fishStix">
-	hi
+<style type="text/css">
+
+	#journal {
+		font-size: 35px;
+		position: absolute;
+		z-index: 6;
+	}
+
+	#projects {
+		font-size: 35px;
+		position: absolute;
+		z-index: 6;
+	}
+
+	#aboutme {
+		font-size: 35px;
+		position: absolute;
+		z-index: 6;
+	}
+
+	#skyline{
+		position: relative;
+		width:2000px;
+		height:900px;
+		background-image: url(city.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		z-index: 0;
+
+	}
+	#building1{
+		
+		background-image: url(building1.png);
+		background-color:gray;
+		width: 111px;
+		height: 716px;
+		left: 24%;
+		top: 125px;
+
+
+}
+	#building2{
+		background-image: url(projectsbuilding.jpg);
+		background-color: black;
+		width: 124px;
+		height:760px;
+		left:47.1%;
+		top: 55px;
+
+
+
+}
+	#building3{
+		background-image: url(Skyscrapers5.jpg);
+		width: 130px;
+		height: 726px;
+		background-color: blue;
+		left:75%;
+		top: 85px;
+
+	}
+
+.building{
+	position: absolute;
+	z-index: 5;
+	background-position:center;
+	background-size:contain;
+
+}
+
+.link {
+	background-color: lightblue;
+	font-size: 30px;
+}
+
+</style>
+
+<a href="journal.html">
+	<div class="building" id ="building1">
+	<div class="link">Journal</div>
+
+</div></a>
+
+
+<a href="projects.html">
+	<div class="building" id ="building2">
+		<div class="link">Projects</div>
+
 </div>
 
+</a>
 
+
+
+<a href="aboutme.html">
+	<div class="building" id ="building3">
+		<div class="link">About Me</div>
+
+</div></a>
+
+<div id ="skyline"></div>
 
 
 </body>
