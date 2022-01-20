@@ -1,0 +1,1 @@
+They used functions to create divs at a specific speed which are the image of the coin and then used an array to randomly generate the location of the coin. Then, a eventlistener with click allowed the coin to disappear and the money counter to go up by one.

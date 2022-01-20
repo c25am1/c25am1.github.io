@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	#background{
+		width:1425px;
+		height:900px;
+		background-image: url(https://worldmapwithcountries.net/wp-content/uploads/2018/07/map1.jpg);
+		background-repeat: no-repeat;
+		background-size: absolute;
+		position: relative;
+		top:10%;
+		z-index:1;
+	}
+
+	.cities{
+
+	}
+
+	.citynames{
+		font-size: 15px;
+		position:absolute; 
+		z-index:2;
+	}
+
+	#nycname{
+		top:180px;
+		left:19%;
+	}
+
+	#londonname{
+		top:180px;
+		left:19%;
+	}
+
+	#shanghainame{
+		top:180px;
+		left:19%;
+	}
+
+	#mumbainame{
+		top:180px;
+		left:19%;
+	}
+
+	#moscowname{
+		top:180px;
+		left:19%;
+	}
+
+	#berlinname{
+		top:180px;
+		left:19%;
+	}
+
+	#tokyoname{
+		top:180px;
+		left:19%;
+	}
+
+	#lagosname{
+		top:180px;
+		left:19%;
+	}
+
+	#caironame{
+		top:180px;
+		left:19%;
+	}
+
+	#dubainame{
+		top:180px;
+		left:19%;
+	}
+
+	#mexicocityname{
+		top:180px;
+		left:19%;
+	}
+
+	#laname{
+		top:180px;
+		left:19%;
+	}
+
+	#saopauloname{
+		top:180px;
+		left:19%;
+	}
+
+	#parisname{
+		top:180px;
+		left:19%;
+	}
+
+	#kinshasaname{
+		top:180px;
+		left:19%;
+	}
+
+	#khartoumname{
+		top:180px;
+		left:19%;
+	}
+
+	#jakartaname{
+		top:180px;
+		left:19%;
+	}
+
+	#beijingname{
+		top:180px;
+		left:19%;
+	}
+
+	#delhiname{
+		top:180px;
+		left:19%;
+	}
+
+	#osakaname{
+		top:180px;
+		left:19%;
+	}
+
+	#seoulname{
+		top:180px;
+		left:19%;
+	}
+
+	#karachiname{
+		top:180px;
+		left:19%;
+	}
+
+	#dhakaname{
+		top:180px;
+		left:19%;
+	}
+
+	#buenosairesname{
+		top:180px;
+		left:19%;
+	}
+
+
+	.citypoints{
+		width:10px;
+		height:10px;
+		background-color: red;
+		position: absolute;
+		z-index: 2;
+	}
+
+	#nycpoint{
+		top:170px;
+		left:21.2%;
+	}
+
+	#londonpoint{
+		top:133px;
+		left:40.2%;
+	}
+
+	#shanghaipoint{
+		top:230px;
+		left:73.7%;
+	}
+
+	#mumbaipoint{
+		top:280px;
+		left:61.3%;
+	}
+
+	#moscowpoint{
+		top:120px;
+		left:49.2%;
+	}
+
+	#berlinpoint{
+		top:143px;
+		left:43.3%;
+	}
+
+	#tokyopoint{
+		top:204px;
+		left:78.4%;
+	}
+
+	#lagospoint{
+		top:334px;
+		left:40.8%;
+	}
+
+	#cairopoint{
+		top:235px;
+		left:48.4%;
+	}
+
+	#dubaipoint{
+		top:260px;
+		left:55.3%;
+	}
+
+	#mexicocitypoint{
+		top:280px;
+		left:11.6%;
+	}
+
+	#lapoint{
+		top:217px;
+		left:7.4%;
+	}
+
+	#saopaulopoint{
+		top:470px;
+		left:27.2%;
+	}
+
+	#parispoint{
+		top:151px;
+		left:40.8%;
+	}
+
+	#kinshasapoint{
+		top:400px;
+		left:44.8%;
+	}
+
+	#khartoumpoint{
+		top:270px;
+		left:48.4%;
+	}
+	#jakartapoint{
+		top:400px;
+		left:71.8%;
+	}
+
+	#beijingpoint{
+		top:188px;
+		left:71.2%;
+	}
+
+	#delhipoint{
+		top:255px;
+		left:62.7%;
+	}
+
+	#osakapoint{
+		top:217px;
+		left:77%;
+	}
+
+	#seoulpoint{
+		top:202px;
+		left:74.9%;
+	}
+
+	#karachipoint{
+		top:261px;
+		left:59%;
+	}
+
+	#dhakapoint{
+		top:261px;
+		left:65%;
+	}
+
+	#buenosairespoint{
+		top:485px;
+		left:25.6%;
+	}
+
+	.cities{
+		width:60px;
+		height:60px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		position: absolute;
+	}
+
+	/*#nyc{
+		background-image:url(https://content.fortune.com/wp-content/uploads/2021/04/GettyImages-1232096107.jpg);
+		left:19.5%;
+		top:128px;*/
+		
+	
+
+	#plane{
+		transition:2.5s;
+		background-size: contain;
+		position: absolute;
+		display:inline-block;
+		background-position:center;
+		width:200px;
+		height:200px;
+		background-image:url(plane.png);
+		background-repeat:no-repeat;
+		z-index:5;
+	}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="plane"></div>
+<div id="background"></div>
+	<div id="nyc" class="cities"></div>
+	<div id="london" class="cities"></div>
+	<div id="shanghai" class="cities"></div>
+	<div id="mumbai" class="cities"></div>
+	<div id="moscow" class="cities"></div>
+	<div id="berlin" class="cities"></div>
+	<div id="tokyo" class="cities"></div>
+	<div id="lagos" class="cities"></div>
+	<div id="cairo" class="cities"></div>
+	<div id="dubai" class="cities"></div>
+	<div id="mexicocity" class="cities"></div>
+	<div id="london" class="cities"></div>
+	<div id="la" class="cities"></div>
+	<div id="saopaulo" class="cities"></div>
+	<div id="paris" class="cities"></div>
+	<div id="kinshasa" class="cities"></div>
+	<div id="khartoum" class="cities"></div>
+	<div id="jakarta" class="cities"></div>
+	<div id="beijing" class="cities"></div>
+	<div id="delhi" class="cities"></div>
+	<div id="osaka" class="cities"></div>
+	<div id="seoul" class="cities"></div>
+	<div id="karachi" class="cities"></div>
+	<div id="dhaka" class="cities"></div>
+	<div id="buenosaires" class="cities"></div>
+	<div id="nycpoint" class="citypoints"></div>
+	<div id="londonpoint" class="citypoints"></div>
+	<div id="shanghaipoint" class="citypoints"></div>
+	<div id="mumbaipoint" class="citypoints"></div>
+	<div id="moscowpoint" class="citypoints"></div>
+	<div id="berlinpoint" class="citypoints"></div>
+	<div id="tokyopoint" class="citypoints"></div>
+	<div id="lagospoint" class="citypoints"></div>
+	<div id="cairopoint" class="citypoints"></div>
+	<div id="dubaipoint" class="citypoints"></div>
+	<div id="mexicocitypoint" class="citypoints"></div>
+	<div id="lapoint" class="citypoints"></div>
+	<div id="saopaulopoint" class="citypoints"></div>
+	<div id="parispoint" class="citypoints"></div>
+	<div id="kinshasapoint" class="citypoints"></div>
+	<div id="khartoumpoint" class="citypoints"></div>
+	<div id="jakartapoint" class="citypoints"></div>
+	<div id="beijingpoint" class="citypoints"></div>
+	<div id="delhipoint" class="citypoints"></div>
+	<div id="osakapoint" class="citypoints"></div>
+	<div id="seoulpoint" class="citypoints"></div>
+	<div id="karachipoint" class="citypoints"></div>
+	<div id="dhakapoint" class="citypoints"></div>
+	<div id="buenosairespoint" class="citypoints"></div>
+	<div id="nycname" class="citynames">New York City</div>
+	<div id="londonname" class="citynames"></div>
+	<div id="shanghainame" class="citynames"></div>
+	<div id="mumbainame" class="citynames"></div>
+	<div id="moscowname" class="citynames"></div>
+	<div id="berlinname" class="citynames"></div>
+	<div id="tokyoname" class="citynames"></div>
+	<div id="lagosname" class="citynames"></div>
+	<div id="caironame" class="citynames"></div>
+	<div id="dubainame" class="citynames"></div>
+	<div id="mexicocityname" class="citynames"></div>
+	<div id="laname" class="citynames"></div>
+	<div id="saopauloname" class="citynames"></div>
+	<div id="parisname" class="citynames"></div>
+	<div id="kinshasaname" class="citynames"></div>
+	<div id="khartoumname" class="citynames"></div>
+	<div id="jakartaname" class="citynames"></div>
+	<div id="beijingname" class="citynames"></div>
+	<div id="delhiname" class="citynames"></div>
+	<div id="osakaname" class="citynames"></div>
+	<div id="seoulname" class="citynames"></div>
+	<div id="karachiname" class="citynames"></div>
+	<div id="dhakaname" class="citynames"></div>
+	<div id="buenosairesname" class="citynames"></div>
+
+
+
+	<script type="text/javascript">
+		var plane1 = document.getElementById('plane')
+
+		function flyplane (event){
+			console.log(event.clientX, event.clientY);
+			plane1.style.left=event.clientX-100+"px";
+			plane1.style.top=event.clientY-100+"px";
+		}
+
+		document.addEventListener("click", flyplane);
+
+	
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#platformcube{
+			width:50px;
+			height:50px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			background-image: url(cube.png);
+			/*background-color: green;*/
+			/*top:550px;
+			left:7%;*/
+		}
+
+		#floor1{
+			background-color:black;
+			height:10px;
+			width:350px;
+			position:relative;
+			top:550px;
+			left:7%;
+		}
+
+		#floor2{
+			background-color:black;
+			height:10px;
+			width:250px;
+			position:relative;
+			top:540px;
+			left:37%;
+		}
+
+		#floor3{
+			background-color:black;
+			height:10px;
+			width:100px;
+			position:relative;
+			top:470px;
+			left:55%;
+		}
+
+		#floor4{
+			background-color:black;
+			height:10px;
+			width:100px;
+			position:relative;
+			top:400px;
+			left:62.3%;
+		}
+
+		#floor5{
+			background-color:black;
+			height:10px;
+			width:100px;
+			position:relative;
+			top:330px;
+			left:69.6%;
+		}
+
+		#floor6{
+			background-color:black;
+			height:10px;
+			width:200px;
+			position:relative;
+			top:260px;
+			left:76.9%;
+		}
+
+		#floor7{
+			background-color:black;
+			height:10px;
+			width:135px;
+			position:relative;
+			top:190px;
+			left:91.2%;
+		}
+
+		#end{
+			background-color:red;
+			height:80px;
+			width:10px;
+			position:relative;
+			top:100px;
+			left:99.8%;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+
+
+
+
+<div id = "platformcube"></div>
+<div id = "floor1"></div>
+<div id = "floor2"></div>
+<div id = "floor3"></div>
+<div id = "floor4"></div>
+<div id = "floor5"></div>
+<div id = "floor6"></div>
+<div id = "floor7"></div>
+<div id = "end"></div>
+
+
+	<script type="text/javascript">
+
+		var platformcube = document.getElementById('platformcube')
+		platformcube.style.left = "100px";
+				platformcube.style.top = "500px";
+
+		document.addEventListener("keypress",
+			function(event){
+
+			if(event.key == "d") {
+				console.log(event.key);
+				platformcube.style.left = 
+				parseInt(platformcube.style.left)+20+"px";
+				console.log(platformcube.style.left)
+
+			}
+
+			if(event.key == "w") {
+
+				console.log(event.key);
+				platformcube.style.top = platformcube.style.top-50+"px";
+			}
+
+		}// end of function
+		);
+
+	</script>
+
+</body>
+</html>

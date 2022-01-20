@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// could be "mousemove" or "keypress" as well
+		document.addEventListener("keypress",
+			function(event){
+			// console.log(event);
+
+			var square = document.
+				createElement('div');
+				document.body.appendChild(square);
+
+			if(event.key === "1") {
+				square.innerText = "hello";
+			}
+
+			else if(event.key != "1") {
+				square.innerText = "hi";
+			}
+
+			})
+
+		// x.id = number
+		// x.style.display="inline-block";
+		// x.style.width="100px";
+		// x.style.height="100px";
+
+
+
+
+
+
+	</script>
+</body>
+</html>
