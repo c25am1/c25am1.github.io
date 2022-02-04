@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+	
+	#whatever{
+		width:100px;
+		height:100px;
+		background-color:red;
+		animation-name:expand;
+		animation-duration:3s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes expand{
+		0%{
+			width:100px;
+		}
+
+		50%{
+			width:200px;
+		}
+
+		100%{
+			width:100px;
+		}
+	}
+</style>
+<body>
+
+	<div id="whatever" style="width:100px;"></div>
+
+	<script type="text/javascript">
+		
+		function measureWidth (){
+			var x = parseInt(whatever.style.width);
+			console.log(x)
+		}
+
+		setInterval(measureWidth, 1100)
+	</script>
+
+
+
+
+</body>
+</html>

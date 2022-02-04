@@ -3,6 +3,20 @@
 <head>
 	<title></title>
 	<style type="text/css">
+		
+		body{
+			background-color:rgb(255,209,160);
+			z-index: 1;
+		}
+
+		#text2{
+			font-size: 30px;
+			left:300px;
+			top:20px;
+			position:absolute;
+			background-color:rgb(255,204,203);
+		}
+
 		#map1{
 			width:500px;
 			height:500px;
@@ -11,19 +25,8 @@
 			background-size: cover;
 			position: relative;
 			left:410px;
-			top:300px;
-		}
-
-		#map2{
-			width:500px;
-			height:500px;
-			background-image:url(Boroughs.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			position: relative;
-			left:410px;
-			top:600px;
-
+			top:200px;
+			z-index: 5;
 		}
 
 		.circle{
@@ -34,35 +37,1057 @@
 			background-size: contain;
 			opacity: 0.5;
 			display:inline-block;
-			position: relative;
+			position: absolute;
+			z-index:6;
 		}
 
 		#circle1{
-			left:200px;
-			top:300px;
+			left:670px;
+			top:365px;
+
+			animation-name: manhattanchange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
 		}
 
-		@keyframes circlesize{
+		#circle2{
+			left:757px;
+			top:287px;
+
+			animation-name: bronxchange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
+		}
+
+		#circle3{
+			left:800px;
+			top:438px;
+
+			animation-name: queenschange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
+		}
+
+		#circle4{
+			left:517px;
+			top:588px;
+
+			animation-name: statenislandchange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
+		}
+
+		#circle5{
+			left:690px;
+			top:510px;
+
+			animation-name: brooklynchange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
+		}
+
+/*		#text{
+			left:0px;
+			top:450px;
+			background-color:red;
+			width:100px;
+			height:200px;
+		}*/
+
+		#text1{
+			width:155px;
+			height:65px;
+			background-color:lightblue;
+			position:absolute;
+			font-size: 44px;
+			font-family: monospace;
+			font-
+		}
+
+		.text{
+			position:absolute;
+			left:1100px;
+			font-size:25px;
+			font-family:monospace;
+		}
+
+		#march1{
+			top:10px;
+		}
+
+		#april1{
+			top:40px;
+		}
+
+		#may1{
+			top:70px;
+		}
+
+		#june1{
+			top:100px;
+		}
+
+		#july1{
+			top:130px;
+		}
+
+		#august1{
+			top:160px;
+		}
+
+		#september1{
+			top:190px;
+		}
+
+		#october1{
+			top:220px;
+		}
+
+		#november1{
+			top:250px;
+		}
+
+		#december1{
+			top:280px;
+		}
+
+		#january2{
+			top:310px;
+		}
+
+		#february2{
+			top:340px;
+		}
+
+		#march2{
+			top:370px;
+		}
+
+		#april2{
+			top:400px;
+		}
+
+		#may2{
+			top:430px;
+		}
+
+		#june2{
+			top:460px;
+		}
+
+		#july2{
+			top:490px;
+		}
+
+		#august2{
+			top:520px;
+		}
+
+		#september2{
+			top:550px;
+		}
+
+		#october2{
+			top:580px;
+		}
+
+		#november2{
+			top:610px;
+		}
+
+		#december2{
+			top:640px;
+		}
+
+		#january3{
+			top:670px;
+		}
+
+		#marker{
+			position:absolute;
+			width:25px;
+			height:25px;
+			left:1050px;
+			top:15px;
+			background-image:url(COVID.png);
+			background-size: contain;
+			background-repeat:no-repeat`;
+
+			animation-name: markerchange;
+			animation-duration: 23s;
+			animation-iteration-count: 1;
+
+
 
 		}
+
+
+
+
+		
+		@keyframes manhattanchange{
+			0%{
+				width:20px;
+				height:20px;
+
+			}
+
+			4.3%{
+				transform: scale(0.31);
+			}
+
+			8.7%{
+				transform:scale(3);
+
+			}
+
+			13%{
+				transform:scale(1.2);
+			}
+
+			17%{
+				transform:scale(0.4);
+			}
+
+			21.7%{
+				transform:scale(0.42);
+			}
+
+			26%{
+				transform:scale(0.25);
+			}
+
+			30.4%{
+				transform:scale(0.3);
+			}
+
+			34.8%{
+				transform:scale(0.65);
+			}
+
+			39.1%{
+				transform:scale(0.725);
+			}
+
+			43.5%{
+				transform:scale(2.4);
+			}
+
+			47.8%{
+				transform:scale(5.5);
+			}
+
+			52.2%{
+				transform:scale(3.35);
+			}
+
+			56.2%{
+				transform:scale(3.65);
+			}
+
+			60.9%{
+				transform:scale(3);
+			}
+
+			65.2%{
+				transform:scale(.825);
+			}
+
+			69.6%{
+				transform:scale(0.28);
+			}
+
+			73.9%{
+				transform:scale(0.22);
+			}
+
+			78.2%{
+				transform:scale(1.5);
+			}
+
+			82.6%{
+				transform:scale(2.08);
+			}
+
+			87%{
+				transform:scale(1.25);
+			}
+
+			91.3%{
+				transform:scale(0.97);
+			}
+
+			95.7%{
+				transform:scale(2.5);
+			}
+
+			100%{
+				transform:scale(35.2);
+
+			}
+		}
+
+
+		@keyframes bronxchange{
+			0%{
+				width:20px;
+				height:20px;
+			}
+
+			4.3%{
+				transform:scale(0.165);
+			}
+
+			8.7%{
+				transform:scale(5.25);
+			}
+
+			13%{
+				transform:scale(2.37);
+
+			}
+
+			17%{
+				transform:scale(0.625);
+
+			}
+
+			21.7%{
+				transform:scale(0.29);
+
+			}
+
+			26%{
+				transform:scale(0.28);
+
+			}
+
+			30.4%{
+				transform:scale(0.16);
+
+			}
+
+			34.8%{
+				transform:scale(0.42);
+
+			}
+
+			39.1%{
+				transform:scale(0.7);
+
+			}
+
+			43.5%{
+				transform:scale(3.75);
+
+			}
+
+			47.8%{
+				transform:scale(7.1);
+
+			}
+
+			52.2%{
+				transform:scale(6);
+
+			}
+
+			56.2%{
+				transform:scale(4.75);
+
+			}
+
+			60.9%{
+				transform:scale(3.25);
+
+			}
+
+			65.2%{
+				transform:scale(1.1);
+
+			}
+
+			69.6%{
+				transform:scale(0.46);
+
+			}
+
+			73.9%{
+				transform:scale(0.16);
+
+			}
+
+			78.2%{
+				transform:scale(1.1);
+
+			}
+
+			82.6%{
+				transform:scale(2);
+
+			}
+
+			87%{
+				transform:scale(2.07);
+
+			}
+
+			91.3%{
+				transform:scale(0.55);
+
+			}
+
+			95.7%{
+				transform:scale(1.5);
+
+			}
+
+			100%{
+				transform:scale(36.4);
+				
+			}
+		}
+
+		@keyframes queenschange{
+			0%{
+				width:20px;
+				height:20px;
+			}
+
+			4.3%{
+				transform:scale(0.16);
+			}
+
+			8.7%{
+				transform:scale(9.05);
+
+			}
+
+			13%{
+				transform:scale(3.15);
+
+			}
+
+			17%{
+				transform:scale(0.85);
+
+			}
+
+			21.7%{
+				transform:scale(0.5);
+
+			}
+
+			26%{
+				transform:scale(0.325);
+
+			}
+
+			30.4%{
+				transform:scale(0.385);
+
+			}
+
+			34.8%{
+				transform:scale(0.83);
+
+			}
+
+			39.1%{
+				transform:scale(1.55);
+
+			}
+
+			43.5%{
+				transform:scale(5.6);
+			}
+
+			47.8%{
+				transform:scale(11.15);
+
+			}
+
+			52.2%{
+				transform:scale(7.6);
+
+			}
+
+			56.2%{
+				transform:scale(5.6);
+
+			}
+
+			60.9%{
+				transform:scale(5.4);
+
+			}
+
+			65.2%{
+				transform:scale(1.9);
+			}
+
+			69.6%{
+				transform:scale(0.45);
+
+			}
+
+			73.9%{
+				transform:scale(0.33);
+
+			}
+
+			78.2%{
+				transform:scale(1.85);
+
+			}
+
+			82.6%{
+				transform:scale(2.1);
+			}
+
+			87%{
+				transform:scale(1.7);
+
+			}
+
+			91.3%{
+				transform:scale(0.98);
+
+			}
+
+			95.7%{
+				transform:scale(3.2);
+
+			}
+
+			100%{
+				transform:scale(59.275);
+				
+			}
+		}
+
+		@keyframes statenislandchange{
+			0%{
+				width:20px;
+				height:20px;
+			}
+
+			4.3%{
+				transform:scale(0.05);
+			}
+
+			8.7%{
+				transform:scale(1.5);
+
+			}
+
+			13%{
+				transform:scale(0.5);
+
+			}
+
+			17%{
+				transform:scale(0.15);
+
+			}
+
+			21.7%{
+				transform:scale(0.2);
+
+			}
+
+			26%{
+				transform:scale(0.09);
+
+			}
+
+			30.4%{
+				transform:scale(0.125);
+
+			}
+
+			34.8%{
+				transform:scale(0.18);
+
+			}
+
+			39.1%{
+				transform:scale(0.46);
+
+			}
+
+			43.5%{
+				transform:scale(2.35);
+
+			}
+
+			47.8%{
+				transform:scale(4);
+
+			}
+
+			52.2%{
+				transform:scale(1.5);
+
+			}
+
+			56.2%{
+				transform:scale(1.65);
+
+			}
+
+			60.9%{
+				transform:scale(1.51);
+
+			}
+
+			65.2%{
+				transform:scale(0.55);
+
+			}
+
+			69.6%{
+				transform:scale(0.17);
+
+			}
+
+			73.9%{
+				transform:scale(0.19);
+
+			}
+
+			78.2%{
+				transform:scale(0.66);
+
+			}
+
+			82.6%{
+				transform:scale(0.86);
+
+			}
+
+			87%{
+				transform:scale(0.55);
+
+			}
+
+			91.3%{
+				transform:scale(0.375);
+
+			}
+
+			95.7%{
+				transform:scale(1.3);
+
+			}
+
+			100%{
+				transform:scale(13.1);
+				
+			}
+		}
+
+		@keyframes brooklynchange{
+			0%{
+				width:20px;
+				height:20px;
+			}
+
+			4.3%{
+				transform:scale(0.115);
+			}
+
+			8.7%{
+				transform:scale(7.7);
+
+			}
+
+			13%{
+				transform:scale(2.8);
+
+			}
+
+			17%{
+				transform:scale(1.25);
+
+			}
+
+			21.7%{
+				transform:scale(0.625);
+
+			}
+
+			26%{
+				transform:scale(0.41);
+
+			}
+
+			30.4%{
+				transform:scale(0.52);
+
+			}
+
+			34.8%{
+				transform:scale(1.25);
+
+			}
+
+			39.1%{
+				transform:scale(1.5);
+
+			}
+
+			43.5%{
+				transform:scale(5.5);
+
+			}
+
+			47.8%{
+				transform:scale(9);
+
+			}
+
+			52.2%{
+				transform:scale(7.9);
+
+			}
+
+			56.2%{
+				transform:scale(6.15);
+
+			}
+
+			60.9%{
+				transform:scale(5.55);
+
+			}
+
+			65.2%{
+				transform:scale(2.25);
+
+			}
+
+			69.6%{
+				transform:scale(0.415);
+
+			}
+
+			73.9%{
+				transform:scale(0.37);
+
+			}
+
+			78.2%{
+				transform:scale(2.435);
+
+			}
+
+			82.6%{
+				transform:scale(3);
+
+			}
+
+			87%{
+				transform:scale(2.5);
+
+			}
+
+			91.3%{
+				transform:scale(2.08);
+
+			}
+
+			95.7%{
+				transform:scale(4.4);
+
+			}
+
+			100%{
+				transform:scale(59.5);
+				
+			}
+		}
+
+		@keyframes brooklynchange{
+			0%{
+				
+			}
+
+			4.3%{
+				transform:scale(0.115);
+			}
+
+			8.7%{
+				transform:scale(7.7);
+
+			}
+
+			13%{
+				transform:scale(2.8);
+
+			}
+
+			17%{
+				transform:scale(1.25);
+
+			}
+
+			21.7%{
+				transform:scale(0.625);
+
+			}
+
+			26%{
+				transform:scale(0.41);
+
+			}
+
+			30.4%{
+				transform:scale(0.52);
+
+			}
+
+			34.8%{
+				transform:scale(1.25);
+
+			}
+
+			39.1%{
+				transform:scale(1.5);
+
+			}
+
+			43.5%{
+				transform:scale(5.5);
+
+			}
+
+			47.8%{
+				transform:scale(9);
+
+			}
+
+			52.2%{
+				transform:scale(7.9);
+
+			}
+
+			56.2%{
+				transform:scale(6.15);
+
+			}
+
+			60.9%{
+				transform:scale(5.55);
+
+			}
+
+			65.2%{
+				transform:scale(2.25);
+
+			}
+
+			69.6%{
+				transform:scale(0.415);
+
+			}
+
+			73.9%{
+				transform:scale(0.37);
+
+			}
+
+			78.2%{
+				transform:scale(2.435);
+
+			}
+
+			82.6%{
+				transform:scale(3);
+
+			}
+
+			87%{
+				transform:scale(2.5);
+
+			}
+
+			91.3%{
+				transform:scale(2.08);
+
+			}
+
+			95.7%{
+				transform:scale(4.4);
+
+			}
+
+			100%{
+				transform:scale(59.5);
+				
+			}
+		}
+
+		@keyframes markerchange{
+			0%{
+				left:1050px;
+				top:15px;
+
+			}
+
+			4.3%{
+				top:15px;
+			}
+
+			8.7%{
+				top:45px;
+
+			}
+
+			13%{
+				top:75px;
+			}
+
+			17%{
+				top:105px;
+			}
+
+			21.7%{
+				top:135px;
+			}
+
+			26%{
+				top:165px;
+			}
+
+			30.4%{
+				top:195px;
+			}
+
+			34.8%{
+				top:225px;
+			}
+
+			39.1%{
+				top:255px;
+			}
+
+			43.5%{
+				top:285px;
+			}
+
+			47.8%{
+				top:315px;
+			}
+
+			52.2%{
+				top:345px;
+			}
+
+			56.2%{
+				top:375px;
+			}
+
+			60.9%{
+				top:405px;
+			}
+
+			65.2%{
+				top:435px;
+			}
+
+			69.6%{
+				top:465px;
+			}
+
+			73.9%{
+				top:495px;
+			}
+
+			78.2%{
+				top:525px;
+			}
+
+			82.6%{
+				top:555px;
+			}
+
+			87%{
+				top:585px;
+			}
+
+			91.3%{
+				top:615px;
+			}
+
+			95.7%{
+				top:645px;
+			}
+
+			100%{
+				top:675px;
+
+			}
+		}
+
 
 	</style>
 </head>
 <body>
-<div id="map1">
-	<div id="circle1" class="circle"></div>
+<div id="text2">NYC COVID TRACKER: AVERAGE DAILY CASES</div>
+<div id="text1">Start!</div>
+<div id="march1" class="text">March, 2020</div>
+<div id="april1" class="text">April, 2020</div>
+<div id="may1" class="text">May, 2020</div>
+<div id="june1" class="text">June, 2020</div>
+<div id="july1" class="text">July, 2020</div>
+<div id="august1" class="text">August, 2020</div>
+<div id="september1" class="text">September, 2020</div>
+<div id="october1" class="text">October, 2020</div>
+<div id="november1" class="text">November, 2020</div>
+<div id="december1" class="text">December, 2020</div>
+<div id="january2" class="text">January, 2021</div>
+<div id="february2" class="text">February, 2021</div>
+<div id="march2" class="text">March, 2021</div>
+<div id="april2" class="text">Apriil, 2021</div>
+<div id="may2" class="text">May, 2021</div>
+<div id="june2" class="text">June, 2021</div>
+<div id="july2" class="text">July, 2021</div>
+<div id="august2" class="text">August, 2021</div>
+<div id="september2" class="text">September, 2021</div>
+<div id="october2" class="text">October, 2021</div>
+<div id="november2" class="text">November, 2021</div>
+<div id="december2" class="text">December, 2021</div>
+<div id="january3" class="text">January, 2022</div>
+<div id="marker"></div>
+<div id="map1"></div>
+<div id="circle1" class="circle"></div>
 <div id="circle2" class="circle"></div>
 <div id="circle3" class="circle"></div>
 <div id="circle4" class="circle"></div>
 <div id="circle5" class="circle"></div>
-</div>
-<div id="map2">
-<div id="circle6" class="circle"></div>
-<div id="circle7" class="circle"></div>
-<div id="circle8" class="circle"></div>
-<div id="circle9" class="circle"></div>
-<div id="circle10" class="circle"></div>
-</div>
 
+<script type="text/javascript">
+	function start() {
+circle1.style.webkitAnimationPlayState = "running"
+circle2.style.webkitAnimationPlayState = "running"
+circle3.style.webkitAnimationPlayState = "running"
+circle4.style.webkitAnimationPlayState = "running"
+circle5.style.webkitAnimationPlayState = "running"
+marker.style.webkitAnimationPlayState = "running"
+
+}
+
+circle1.style.webkitAnimationPlayState = "paused"
+circle2.style.webkitAnimationPlayState = "paused"
+circle3.style.webkitAnimationPlayState = "paused"
+circle4.style.webkitAnimationPlayState = "paused"
+circle5.style.webkitAnimationPlayState = "paused"
+marker.style.webkitAnimationPlayState = "paused"
+
+text1.addEventListener('click', start);
+
+
+</script>
 </body>
 </html>
