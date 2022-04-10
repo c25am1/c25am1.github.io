@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.virus{
+			background-image:url(COVID.png);
+			width:100px;
+			height:100px;
+			background-size:contain;
+			position:absolute;
+			background-repeat:no-repeat;
+		}
+
+		#input{
+			width:120px;
+			height:36px;
+			border-width: 3px;
+			border-color:black;
+			background-color:lightgray;
+			position:absolute;
+			left:91%;
+			font-size:25px;
+		}
+	</style>
+</head>
+<body>
+<div id="input"></div>
+<script type="text/javascript">
+	
+	var pew = document.getElementById('sound');
+	var input = document.getElementById('input');
+	var x = 0;
+
+	function createCorona() {
+		var corona = document.createElement('div');
+		document.body.appendChild(corona);
+		corona.classList.add("virus");
+
+		function changePosition() {
+			corona.style.left = 1000 * Math.random() + "px";
+			corona.style.top = 1000 * Math.random() + "px";};
+
+		corona.addEventListener("click", function(){
+			console.log("hi");
+			x = x + 1;
+			input.innerText = "Counter: " + x;
+			corona.classList.remove("virus");
+			// pew.play() 
+		})
+
+
+
+		setInterval(changePosition, 2000)
+		};
+
+		setInterval(createCorona,1000);
+
+
+</script>
+</body>
+</html>

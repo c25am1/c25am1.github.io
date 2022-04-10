@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.whatever{
+			width:100px;
+			height:100px;
+			background-color:blue;
+			margin:5px;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+function makeThing (x){
+	var box = document.createElement("div")
+	document.body.appendChild(box);
+	box.classList.add("whatever");
+	box.innerText = x;
+}
+
+for (var i=0; i<100; i=i+1) {
+	makeThing(i)
+}
+
+</script>
+</body>
+</html>

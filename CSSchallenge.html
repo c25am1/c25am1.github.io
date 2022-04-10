@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#thing1{
+			background-color:blue;
+			font-size:40px;
+			color:white;
+			font-family: Arial, Helvectica, sans-serif;
+		}
+
+		#thing1:hover{
+			background-color:pink;
+			transition: 1s;
+		}
+
+		#thing2{
+			background-color:green;
+			left:10%;
+			font-size:17px;
+			color:white;
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		#thing2:hover{
+			background-color:orange;
+			transition: 1s;
+		}
+
+		#thing3{
+			background-color:red;
+			left:20%;
+			font-size:21px;
+			color:blue;
+			font-family: "Lucida Console", "Courier New", sans-serif;
+		}
+
+		#thing3:hover{
+			background-color:lightblue;
+			transition: 1s;
+		}
+
+		#thing4{
+			background-color:magenta;
+			left:30%;
+		}
+
+		.things{
+			width:100px;
+			height:100px;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+
+<div id="thing1" class="things">Hello!</div>
+<div id="thing2" class="things">How are you?</div>
+<div id="thing3" class="things">Goodbye!</div>
+<div id="thing4" class="things"></div>
+
+<script type="text/javascript">
+	thing1.addEventListener('click',function(){
+		thing1.style.backgroundColor = "purple";
+	});
+
+	thing2.addEventListener('click', function(){
+		for(var x = 0; x < 100; x++){
+			var box = document.createElement("div")
+			document.body.appendChild(box);
+			box.style.left = "135px";
+			box.style.top = "15px";
+			box.style.backgroundColor = "black";
+			box.style.width = "100px";
+			box.style.height="100px";
+			box.style.position = "relative";
+		}
+	});
+
+	var playsong = "paused";
+	var songstatus = 0;
+	thing3.addEventListener('click', function(){
+		if (playsong == "paused"){
+			playsong = "played";
+			thing3.style.backgroundColor = "purple"
+		}
+
+		if (playsong == "played"){
+			playsong = "paused";
+			thing3.style.backgroundColor = "yellow"
+
+		}
+
+	})
+
+
+	var colorswitch = Math.round(Math.random()*5);
+	var colors = [backgroundColor = "red", backroundColor = "orange", backgroundColor = "yellow", backgroundColor = "green", backgroundColor = "blue", backgroundColor = "purple"]
+
+	console.log(colors[colorswitch])
+
+	thing4.style.backgroundColor = colors[colorswitch]
+	
+
+
+
+
+
+</script>
+</body>
+</html>
