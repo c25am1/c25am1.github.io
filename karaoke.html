@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#clickbox{
+			width:200px;
+			height:200px;
+			background-image:url(music.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			border-radius:50%;
+			border-width:5px;
+			border-color:black;
+			top:270px;
+			left:620px;
+		}
+
+
+	</style>
+</head>
+<body>
+<div id = "clickbox"></div>
+<audio id="songs"></audio>
+<script type="text/javascript">
+
+	var array =["song1.m4a", "song2.m4a", "song3.m4a", "song4.m4a", "song5.m4a", "song6.m4a", "song7.m4a", "song8.m4a", "song9.m4a","song10.m4a", "song11.m4a", "song12.m4a", "song13.m4a"]
+
+	clickbox.addEventListener("click", function(){
+
+		x = Math.round(Math.random()*12)
+
+		songs.src = array[x]
+
+		songs.play();
+	})
+
+
+
+</script>
+</body>
+</html>

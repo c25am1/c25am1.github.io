@@ -22,7 +22,7 @@
 			background-color:lightgray;
 			position:absolute;
 			left:91%;
-			font-size:25px;
+			font-size:20px;
 		}
 	</style>
 </head>
@@ -40,11 +40,11 @@
 		corona.classList.add("virus");
 
 		function changePosition() {
-			corona.style.left = 1000 * Math.random() + "px";
-			corona.style.top = 1000 * Math.random() + "px";};
+			corona.style.left = 1350 * Math.random() + "px";
+			corona.style.top = 650 * Math.random() + "px";};
 
 		corona.addEventListener("click", function(){
-			console.log("hi");
+			console.log("count");
 			x = x + 1;
 			input.innerText = "Counter: " + x;
 			corona.classList.remove("virus");
@@ -56,7 +56,7 @@
 		setInterval(changePosition, 2000)
 		};
 
-		setInterval(createCorona,1000);
+		setInterval(createCorona,500);
 
 
 </script>
