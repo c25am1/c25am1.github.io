@@ -1,162 +1,152 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Journal</title>
-
+	<title>
+		Journal
+	</title>
 	<style type="text/css">
-		#background{
-			width:1425px;
-			height:900px;
-			background-color: lightgreen;
+		#title {
+			font-size: 75px;
+		}
+		#description {
+			font-size: 20px;
+		}
+		#home {
+			font-size: 40px;
+			position: absolute; top: 5px; left: 11px;
+			color: lightpink;
+			font-family: "Lucida Console", "Courier New", sans-serif;
+		}
+		#date {
+			font-size: 37px;
 		}
 
-		#entry1{
-			left:20px;
-			top:20%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
+		#entries {
+			font-size: 30px;
 		}
 
-		#entry2{
-			left:1000px;
-			top:20%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
+		body{
+			background-color:lightgreen;
+			margin:0px;
+			text-align: center;
+			padding-left: 10%;
+			padding-right: 10%;
 		}
-
-		#entry3{
-			left:20px;
-			top:35%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry4{
-			left:1000px;
-			top:35%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry5{
-			left:20px;
-			top:50%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry6{
-			left:1000px;
-			top:50%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry7{
-			left:20px;
-			top:5%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry8{
-			left:20px;
-			top:5%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry9{
-			left:20px;
-			top:5%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry10{
-			left:20px;
-			top:5%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#entry11{
-			left:20px;
-			top:5%;
-			z-index: 5;
-			font-size:22px;
-			position: absolute;
-		}
-
-		#title{
-		font-size: 45px;
-		z-index:100;
-		background-color: green;
-		top:0%;
-		left:712px;
-		}
-
-		#projects{
-
-		}
-
-		#home{
-
-		}
-
-		#aboutme{
-			font-size: 45px;
-		z-index:100;
-		background-color: green;
-		top:-100%;
-		left:462px;
-		}
-		
 	</style>
 </head>
+
 <body>
-	<div id="background"></div>
-	<div id="entry1">10.4.21
-For today’s class I worked on the background of my website. I was able to create my plan for how to access the specific parts of my website, and began to incorporate it into my design. I used some of the buildings that already existed in the image and some new ones in order to make the “About Me,” “Journal,” and “Projects” sections. I wasn’t able to fully center one of my buildings and bring them lower, but it mostly seemed to be ok.
-</div>
-	<div id="entry2">10.6.21 Error: journal entry from this day was not recorded.</div>
-	<div id="entry3">10.13.21
-For today’s class, I had to redo most of my website that hadn't been saved. I had to redo all of the buildings and commands that opened the new sites. I tried a bunch of different techniques and codes to access the different parts of the site, and I was able to do it. I worked more on the main website background, but I also spent some time on my journal section. I wanted to add a few more specific details in my journal section, but I need to work on it more in order to make it better, and not just a blank screen. I’m looking forward to incorporating my journal entries and start to work on my other project sections.</div>
-	<div id="entry4">10.18.21
-	In today's class, we worked on animations and allowing objects to move across the screen. I thought it was really cool to be able to have this movement with the repetion, and I decided to work with a few other people in my class to create a Rube Goldberg machine inspired animation. We were planning on lining up our computers and having a marble pass through all 3, timed such that as the marble leaves one screen it goes onto the next. Then, we tried to incorporate a slide that the marble could roll down. We also hoped to add dominos, but it took a long time to animate the ball rolling, so we decided to just have the ball roll down the slide, and then slowly move back up to the same height it was at earlier so it could go to the other person's screen. I also worked on my own animation. I created tennis balls that would bounce back and forth across the court between two different rackets. This was pretty fun as I animated the ball arching up and down to go over the tennis net. I also continued to work on the gift I had planned for my brother.</div>
-	<div id="entry5">10.25.21
-	In today's class, we worked on creating variables with javascript such that objects could appear on the screen without a click or a hover feature. It took a while to get the hang of, but I decided to add some clouds and potentially cars to the homepage of my website so that I could add more details to it. Although, I might later decide to make that click based. I also nearly finished the project for my brother's birthday.</div>
-	<div id="entry6">
-		11.1.21
-		A variable and function are part of java script that allow divs to do things in the code. By instructing the function to get a div and do an action, we can make the function work and actually do something. We have learned about functions, elements, clients, variables, and many other things. I used this function to create a plane that moved around on the screen on a map.
+	<div id="title">
+		Journal!
 	</div>
-	<div id="entry7"></div>
-	<div id="entry8"></div>
-	<div id="entry9"></div>
-	<div id="entry10"></div>
-	<div id="entry10">
-		2.8.22 Today I finished my data representation project which is a covid tracker based on daily cases in all 5 boroughs of New York City over  the entirety of the COVID 19 pandemic. I used transform scale animations to make the circles larger and smaller to represent an increase or decrease in cases, set an event listener to start the function, and also added an image of a covid virus that moved down coinciding with the month to represent the year and month where the increases and decreases in cases occured.
+	
+	<div id="description">This is my journal! All of my descriptions of my work this year are here!</div>
+	
+	<a href="index.html">
+		<div id="home">
+			Home
+		</div>
+	</a>
+	
+	<div id="date">
+		<br>
+	October 4, 2021
 	</div>
-	<center><div id="title">JOURNAL</div></center>
-	<a href="index.html"><div id ="home">HOME</div></a>
-	<a href="projects.html"><div id ="projects">PROJECTS</div></a>
-	<a href="aboutme.html"><div id ="aboutme">ABOUT ME</div></a>
+	
+	<div id="entries">
+	For today’s class I worked on the background of my website. I was able to create my plan for how to access the specific parts of my website, and began to incorporate it into my design. I used some of the buildings that already existed in the image and some new ones in order to make the “About Me,” “Journal,” and “Projects” sections. I wasn’t able to fully center one of my buildings and bring them lower, but it mostly seemed to be ok.
+	</div>
+	
+	<div id="date">
+		<br>
+	October 6, 2021
+	</div>
+	I updated my journal and website pages.
+	<div id="entries">
+		
+	</div>
+	<div id="date">
+		<br>
+	October 13, 2021
+	</div>
+	<div id="entries">
+	For today’s class, I had to redo most of my website that hadn't been saved. I had to redo all of the buildings and commands that opened the new sites. I tried a bunch of different techniques and codes to access the different parts of the site, and I was able to do it. I worked more on the main website background, but I also spent some time on my journal section. I wanted to add a few more specific details in my journal section, but I need to work on it more in order to make it better, and not just a blank screen. I’m looking forward to incorporating my journal entries and start to work on my other project sections.
+	</div>
+	<div id="date">
+		<br>
+	October 18, 2021	
+	</div>
+	<div id="entries">
+	In today's class, we worked on animations and allowing objects to move across the screen. I thought it was really cool to be able to have this movement with the repetion, and I decided to work with a few other people in my class to create a Rube Goldberg machine inspired animation. We were planning on lining up our computers and having a marble pass through all 3, timed such that as the marble leaves one screen it goes onto the next. Then, we tried to incorporate a slide that the marble could roll down. We also hoped to add dominos, but it took a long time to animate the ball rolling, so we decided to just have the ball roll down the slide, and then slowly move back up to the same height it was at earlier so it could go to the other person's screen. I also worked on my own animation. I created tennis balls that would bounce back and forth across the court between two different rackets. This was pretty fun as I animated the ball arching up and down to go over the tennis net. I also continued to work on the gift I had planned for my brother.
+	</div>
+	<div id="date">
+		<br>
+	October 25, 2021
+	</div>
+	<div id="entries">
+	In today's class, we worked on creating variables with javascript such that objects could appear on the screen without a click or a hover feature. It took a while to get the hang of, but I decided to add some clouds and potentially cars to the homepage of my website so that I could add more details to it. Although, I might later decide to make that click based. I also nearly finished the project for my brother's birthday.
+	</div>
+	<div id="date">
+		<br>
+	November 1, 2021	
+	</div>
+	<div id="entries">
+	A variable and function are part of java script that allow divs to do things in the code. By instructing the function to get a div and do an action, we can make the function work and actually do something. We have learned about functions, elements, clients, variables, and many other things. I used this function to create a plane that moved around on the screen on a map.
+	</div>
+	<div id="date">
+		<br>
+		December 7, 2021
+	</div>
+	<div id="entries">
+	Today I worked on my codesketch, which is a map of the world with multiple dots representing the cities. Hopefully, in the future, I would be able to work on adding information about each city.
+	</div>
+	<div id="date">
+		<br>
+	December 9, 2021
+	</div>
+	<div id="entries">
+	I added a plane with an event listener that allowed it to move slowly to the place where clicked. I added many more cities, and began planning out information for each one. I also tried to make sure that the plane could rotate futher. 
+	</div>
+	<div id="date">
+		<br>
+	January 11, 2022
+	</div>
+	<div id="entries">
+	I began planning out my data representation project. After considering multiple options, I decided to make a COVID tracker.
+	</div>
+	<div id="date">
+		<br>
+	January 13, 2022
 
-
+	</div>
+	<div id="entries">
+		I had to choose where I would have this tracker, and given the amount of information, chose to only do NYC. I created a spreadsheet and began collecting data. I recorded the daily number of cases on the first day of each month. I recorded data for each of these boroughs.
+	</div>
+	<div id="date">
+		<br>
+		January 18, 2022
+	</div>
+	<div id="entries">
+		I created the map, and began coding the circles to grow larger and smaller. They would grow and shrink based on how many covid cases there were per month, although it took some time to center them all.
+	</div>
+	<div id="date">
+		<br>
+		January 20, 2022
+	</div>
+	<div id="entries">
+		I switched from an animation using width and length to using the transform function, allowing me to center the circles to show the covid case growth.
+	</div>
+	<div id="date">
+		<br>
+	February 8, 2022
+	</div>
+	<div id="entries"></div>
+	Today I finished my data representation project which is a covid tracker based on daily cases in all 5 boroughs of New York City over  the entirety of the COVID 19 pandemic. I used transform scale animations to make the circles larger and smaller to represent an increase or decrease in cases, set an event listener to start the function, and also added an image of a covid virus that moved down coinciding with the month to represent the year and month where the increases and decreases in cases occured.
 </body>
+
 </html>
-
-
 
 
 
