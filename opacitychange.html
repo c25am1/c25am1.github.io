@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#button{
+			width:100px;
+			height:100px;
+			background-color:green;
+			
+
+		}
+
+		#text{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+		transition:1s;
+			opacity:0;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="button"></div>
+
+	<div id="text">Hello, my name is Molly. I like chocolate.</div>
+
+	<script type="text/javascript">
+		function makeInvisible(){
+			text.style.opacity='0'
+		}
+
+		function makeVisible(){
+			text.style.opacity='1'
+		}
+		
+		button.addEventListener("click", function () {
+			makeVisible();
+
+			setTimeout(makeInvisible, 3000)
+		})
+	</script>
+
+</body>
+</html>
