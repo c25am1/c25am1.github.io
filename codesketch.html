@@ -442,13 +442,14 @@
 		background-size:contain;
 		background-repeat:no-repeat;
 		position: absolute;
-		z-index:2;
+		z-index:10;
 	}
 
 	#nyc{
 		top:160px;
 		left:292px;
-	}
+/*		z-index: 10;
+*/	}
 
 	#london{
 		top:123px;
@@ -917,9 +918,11 @@
 		}
 		
 		nyc.addEventListener("click", function () {
-			setTimeout(makeNycvisible, 2000);
+			setTimeout(makeNycvisible, 1200);
+			// makeNycvisible();
+			// console.log('hi arav!')
 
-			setTimeout(makeNycinvisible, 3000)
+			setTimeout(makeNycinvisible, 7000)
 		})
 
 		function makeLondoninvisible(){
@@ -944,11 +947,11 @@
 			shanghaidiv.style.opacity='1'
 		}
 		
-		nyc.addEventListener("click", function () {
-			setTimeout(makeShanghaivisible,2000);
+		// nyc.addEventListener("click", function () {
+		// 	setTimeout(makeShanghaivisible,2000);
 
-			setTimeout(makeShanghaiinvisible, 3000)
-		})
+		// 	setTimeout(makeShanghaiinvisible, 3000)
+		// })
 
 		function makeMumbaiinvisible(){
 			mumbaidiv.style.opacity='0'
@@ -978,8 +981,8 @@
 			setTimeout(makeMoscowinvisible, 3000)
 		})
 
-		moscow.addEventListener('click',
-			moscowdiv.style.opacity = "100%"
+		moscow.addEventListener('click', function(){
+			moscowdiv.style.opacity = "1"}
 			)
 
 		function makeBerlininvisible(){
@@ -1008,6 +1011,9 @@
 			setTimeout(makeTokyovisible(),2000);
 
 			setTimeout(makeTokyoinvisible, 3000)
+
+
+		})
 
 		// function makeNYCInvisible(){
 		// 	nycdiv.style.opacity='0'
